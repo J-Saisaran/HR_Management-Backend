@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const AttendanceSchema = new mongoose.Schema({
     employee: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Employee', // Assuming you have an Employee model
+        ref: 'Employee', 
         required: true,
     },
     date: {
@@ -12,7 +12,7 @@ const AttendanceSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['Present','present', 'Absent', 'absent','leave', 'Leave','late', 'Late'], // Example statuses
+        enum: ['Present', 'Absent',  'Leave','Late'], 
         required: true,
     },
     notes: {
