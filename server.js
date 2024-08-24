@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-require("./dbconnection/connectdb")
+require("./dbconnection/connectdb"); // Ensure this path is correct
 const PORT = process.env.PORT || 5000;
 
 
